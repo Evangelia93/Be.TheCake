@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6s6-hh1bw$tppwlh-^k_i*_s5awp78cr$ad2w1!s^@+h7ni7t+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "users",
+    "cakes",
+    "orders",
+    "notifications",
+    "payments",
 ]
 
 MIDDLEWARE = [
@@ -80,7 +85,7 @@ DATABASES = {
     }
 }
 
-
+AUTH_USER_MODEL = "users.User"
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 

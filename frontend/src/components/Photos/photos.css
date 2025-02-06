@@ -1,0 +1,18 @@
+.photos {
+    column-count: 3;
+    column-gap: 15px;
+}
+
+.pics {
+    display: inline-block;
+    width: 100%;
+}
+
+.pics img {
+    display:block;
+    width: 100%;
+}
+
+.pics img:hover {
+ 
+}

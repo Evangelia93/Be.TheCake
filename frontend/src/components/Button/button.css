@@ -1,7 +1,25 @@
-.button{
-    /* background-color:#ECACC0;
-    border: 1px solid #BB8899; */
-}
+.button {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 0 !important; 
+  margin: 0 !important; 
+  border: none;
+  }
 .button:hover {
     transform: scale(1.1); 
   }
+
+.btn .button{
+  border: none;
+}
+
+.btn .button .button-icon {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none;
+  background-color: transparent !important;
+
+}

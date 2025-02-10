@@ -16,12 +16,13 @@ import Photos from "./components/Photos";
 function Layout() {
   return (
     <div className="layout">
-      <Photos />
+      {/* <Photos /> */}
+      {/* <Header /> */}
       <main className="content">
         <ScrollToTop /> 
         <Outlet /> 
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

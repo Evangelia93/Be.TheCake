@@ -29,7 +29,7 @@
     }
 }
 
-.slide {
+.slider .slide {
     height: 250px;
     width: 250px;
     display: flex;
@@ -41,7 +41,7 @@
 
 }
 
-.slide img {
+.slider .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover; 
@@ -49,11 +49,11 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.slide img:hover {
+.slider .slide img:hover {
     transform: scale(1.1);
 }
 
-.slider::before,
+.slider .slider::before,
 .slider::after {
     content: '';
     position: absolute;

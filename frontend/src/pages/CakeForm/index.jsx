@@ -6,9 +6,6 @@ function CakeForm() {
     return (
       <form>
         <CakeOrderForm />
-        {/* <label>Enter your name:
-          <input type="text" />
-        </label> */}
       </form>
     )
   }

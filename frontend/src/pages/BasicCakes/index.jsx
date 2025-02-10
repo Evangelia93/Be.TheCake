@@ -1,10 +1,10 @@
-import Button from "../../components/Button"
+import Card from "../../components/Card"
 import "../BasicCakes/basicCakes.css"
 
 function BasicCakes(params) {
     return(<>
         <h1>Choose your cake</h1>
-        <Button label="Add to cart" className="basicCakesBtn"/>
+        <Card />
     </>
     )
 }

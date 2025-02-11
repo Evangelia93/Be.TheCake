@@ -1,4 +1,17 @@
-h1{
+.basicCake .title{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    font-family: "Atma", serif;
+    color: #BB8899;
+}
+.basicCake {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
 }

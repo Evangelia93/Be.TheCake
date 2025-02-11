@@ -11,6 +11,8 @@ import BasicCakes from "./pages/BasicCakes";
 import SignIn from "./components/SignIn";
 import ScrollToTop from "./components/ScrollToTop"; 
 import Photos from "./components/Photos";
+import CakeDetails from "./pages/CakeDetails";
+import Cards from "./components/Cards";
 
 
 function Layout() {
@@ -39,6 +41,7 @@ function App() {
           <Route path="gallery" element={<Gallery/>} />
           <Route path="basiccakes" element={<BasicCakes/>} />
           <Route path="signin" element={<SignIn/>}/> 
+          <Route path="basiccakes/:id" element={<CakeDetails />} />
         </Route>
       </Routes>
     </Router>

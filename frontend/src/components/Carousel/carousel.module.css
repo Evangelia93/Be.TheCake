@@ -10,13 +10,13 @@
     margin-top: 800px;
 }
 
-.slide-track {
+.slideTrack {
     display: flex;
     width: calc(500px * 18); 
     animation: scroll 27s linear infinite;
 }
 
-.slide-track:hover {
+.slideTrack:hover {
     animation-play-state: paused;
 }
 

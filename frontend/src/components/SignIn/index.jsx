@@ -1,5 +1,5 @@
 import React from "react"
-import "../SignIn/signIn.css"
+import style from "../SignIn/signIn.module.css"
 import SignUp from "../SignUp"
 
 function SignIn(params) {

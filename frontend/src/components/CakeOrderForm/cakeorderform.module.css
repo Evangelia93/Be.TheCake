@@ -1,4 +1,4 @@
-.cake-order-form {
+.cakeOrderForm {
     max-width: 500px;
     margin: 40px auto;
     padding: 20px;
@@ -7,19 +7,19 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.cake-order-form h2 {
+.cakeOrderForm h2 {
     text-align: center;
     color: #bb8899;
 }
 
-.cake-order-form label {
+.cakeOrderForm label {
     display: block;
     font-weight: bold;
     margin-top: 15px;
     color: #444;
 }
 
-.cake-order-form input, select, textarea {
+.cakeOrderForm input, select, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -28,12 +28,12 @@
     font-size: 16px;
 }
 
-.cake-order-form textarea {
+.cakeOrderForm textarea {
     resize: vertical;
     min-height: 100px;
 }
 
-.cake-order-form button {
+.cakeOrderForm button {
     display: block;
     width: 100%;
     padding: 12px;
@@ -48,12 +48,12 @@
     transition: background 0.3s;
 }
 
-.cake-order-form button:hover {
+.cakeOrderForm button:hover {
     background-color: #a06677;
 }
 
 /* Price range styling */
-.cake-order-form .price-range {
+.cakeOrderForm .priceRange {
     text-align: center;
     font-size: 18px;
     color: #bb8899;
@@ -62,7 +62,7 @@
 }
 
 /* Pop-up Styling */
-.cake-order-form .popup {
+.cakeOrderForm .popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -74,7 +74,7 @@
     align-items: center;
 }
 
-.cake-order-form .popup-content {
+.cakeOrderForm .popupContent {
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -83,21 +83,21 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.popup-content h3 {
+.popupContent h3 {
     color: #bb8899;
 }
 
-.popup-content ul {
+.popupContent ul {
     list-style-type: none;
     padding: 0;
     text-align: left;
 }
 
-.cake-order-form .popup-content li {
+.cakeOrderForm .popupContent li {
     margin: 5px 0;
     font-size: 16px;
 }
 
-.cake-order-form .popup-content button {
+.cakeOrderForm .popupContent button {
     margin-top: 15px;
 }

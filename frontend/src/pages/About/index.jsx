@@ -1,4 +1,5 @@
 import React from "react";
+import style from "../About/about.module.css"
 
 function About(params) {
     return(

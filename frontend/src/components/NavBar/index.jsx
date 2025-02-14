@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import SignIn from "../SignIn"
 import logo from "../../assets/logo.jpg"
-import "../NavBar/navBar.css"
+import style from "../NavBar/navBar.module.css"
 import user from "../../assets/user.png"
 import Button from "../Button"
 import React, { useState } from "react";
@@ -14,20 +14,20 @@ function NavBar(params) {
         setShowSignIn(!showSignIn);
     };
     return(
-        <nav className="navBar"> 
-        <Link to="/" className="logo">
-            <img src={logo} alt="LOGO" className="logo-image" />
+        <nav className={style.navBar}> 
+        <Link to="/" className={style.logo}>
+            <img src={logo} alt="LOGO" className={style.logo-image} />
          </Link>
          
-          <div className="links">
+          <div className={style.links}>
               <ul>
-                <li><Button label="Home" to="/" className="nav-button" /> </li>
-                <li><Button label="About" to="/about" className="nav-button" /></li>
-                <li><Button label="FAQ" to="/faq" className="nav-button" /></li>
+                <li><Button label="Home" to="/" className={style.nav-button} /> </li>
+                <li><Button label="About" to="/about" className={style.nav-button} /></li>
+                <li><Button label="FAQ" to="/faq" className={style.nav-button} /></li>
               </ul>
           </div>
-          <div className="signin">
-            <img src={user} alt="User Icon" className="user-icon" onClick={toggleSignIn} />
+          <div className={style.signin}>
+            <img src={user} alt="User Icon" className={style.user-icon} onClick={toggleSignIn} />
           </div>
           <PopUp show={showSignIn} onClose={toggleSignIn}>
               <SignIn />

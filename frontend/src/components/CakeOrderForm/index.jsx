@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../CakeOrderForm/cakeorderform.css"
+import style from "../CakeOrderForm/cakeorderform.module.css"
 
 function CakeOrderForm() {
   const [size, setSize] = useState("");
@@ -17,11 +17,11 @@ function CakeOrderForm() {
   const [showPopup, setShowPopup] = useState(false);
 
   const sizePrices = {
-    "10": [100, 130],
-    "15": [140, 170],
-    "20": [170, 200],
-    "25": [200, 230],
-    "30": [220, 260],
+    "10": [95, 120],
+    "15": [130, 150],
+    "20": [160, 180],
+    "25": [190, 220],
+    "30": [220, 240],
   };
 
   const estimatedPrice = size ? sizePrices[size] : [0, 0];
@@ -61,7 +61,7 @@ function CakeOrderForm() {
   };
 
   return (
-    <div className="cake-order-form">
+    <div className={style.cakeOrderForm}>
       <h2>Order Your Custom Cake</h2>
       <form onSubmit={handleSubmit}>
         <label>Your Name:</label>
@@ -115,7 +115,7 @@ function CakeOrderForm() {
         <textarea value={cakeDetails} onChange={(e) => setCakeDetails(e.target.value)} placeholder="Describe your cake design, theme, colors, etc." />
 
         {size && (
-          <p className="price-range">
+          <p className={style.priceRange}>
             Estimated Price: <strong>{estimatedPrice[0]}€ - {estimatedPrice[1]}€</strong>
           </p>
         )}
@@ -124,8 +124,8 @@ function CakeOrderForm() {
       </form>
 
       {showPopup && (
-        <div className="popup">
-          <div className="popup-content">
+        <div className={style.popup}>
+          <div className={style.popupContent}>
             <h3>Thank you for your order!</h3>
             <p>
               Your estimated price is <strong>{estimatedPrice[0]}€ - {estimatedPrice[1]}€</strong>.

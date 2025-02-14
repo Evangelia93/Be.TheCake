@@ -9,71 +9,71 @@ import image6 from "../../assets/cakes/6.jpg"
 import image7 from "../../assets/cakes/7.jpg"
 import image8 from "../../assets/cakes/8.jpg"
 import image9 from "../../assets/cakes/9.jpg"
-import "../Carousel/carousel.css"
+import style from "../Carousel/carousel.module.css"
 
 function Carousel(params) {
     return(<> 
-         <div className="slider">
-            <div className="slide-track">
-                <div className="slide">
+         <div className={style.slider}>
+            <div className={style.slideTrack}>
+                <div className={style.slide}>
                     <img src={image1} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image2} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image3} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image4} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image5} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image6} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image7} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image8} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image9} alt="" />
                 </div>
              
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image1} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image2} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image3} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image4} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image5} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image6} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image7} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image8} alt="" />
                 </div>
-                <div className="slide">
+                <div className={style.slide}>
                     <img src={image9} alt="" />
                 </div>
             </div>
          </div>
-<div className="carouselBtn">
-    <Button to="/gallery" label={"Go to gallery page"} className="goToGalleryBtn" />
+<div className={style.carouselBtn}>
+    <Button to="/gallery" label={"Go to gallery page"} className={style.goToGalleryBtn} />
 </div>
 </>
 )

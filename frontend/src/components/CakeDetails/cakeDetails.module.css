@@ -1,4 +1,4 @@
-.cake-details {
+.cakeDetails {
     display: flex;
     margin: 100px;
     flex-direction: row;
@@ -6,15 +6,14 @@
     gap: 80px;
 }
 
-.cake-details .cake-image {
-    width: 100%;
-    max-height: 500px;
+.cakeDetails .cakeImage {
+    width: 30%;
     object-fit: cover;
-    border-radius: 100%;
+    border-radius: 15%;
     box-shadow: 5px 5px 5px #BB8899;
 }
 
-.cake-details .title{
+.cakeDetails .title{
     margin: 60px;
     text-align: center;
     font-family: 'Atma';
@@ -22,7 +21,7 @@
     color: #BB8899;
 }
 
-.cake-details .description{
+.cakeDetails .description{
     text-align: center;
     font-family: 'Atma';
     font-size: large;
@@ -30,7 +29,7 @@
 
 }
 
-.cake-details .price {
+.cakeDetails .price {
     color: #7f7f7f;
     display: flex;
     flex-direction: row;
@@ -40,14 +39,14 @@
     gap: 30px;
 }
 
-.cake-details .btn{
+.cakeDetails .btn{
     background-color: transparent;
 }
 
-.cake-details .btn-image{
+.cakeDetails .btnImage{
     width: 32px;
 }
-.price-btn {
+.priceBtn {
     display: flex;
     flex-direction: row;
     justify-content: center;

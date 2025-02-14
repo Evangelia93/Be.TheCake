@@ -1,4 +1,4 @@
-import "../Gallery/gallery.css"
+import style from "../Gallery/gallery.module.css"
 
 function Gallery(params) {
     return(<>

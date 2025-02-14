@@ -1,4 +1,4 @@
-import "../FAQ/faq.css"
+import style from "../FAQ/faq.module.css"
 import React from "react"
 
 function FAQ(params) {

@@ -11,7 +11,7 @@ import BasicCakes from "./pages/BasicCakes";
 import SignIn from "./components/SignIn";
 import ScrollToTop from "./components/ScrollToTop"; 
 import Photos from "./components/Photos";
-import CakeDetails from "./pages/CakeDetails";
+import CakeDetails from "../src/components/CakeDetails"
 import Cards from "./components/Cards";
 
 

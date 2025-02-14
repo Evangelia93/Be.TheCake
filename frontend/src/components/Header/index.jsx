@@ -1,12 +1,12 @@
 import React from "react";
-import "../Header/header.css";
+import style from "../Header/header.module.css";
 import NavBar from "../NavBar/index";
 
 function Header() {
     return (
-        <div className="header">
+        <div className={style.header}>
             <NavBar />
-            <div className="wave-container">
+            <div className={style.wave-container}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path
                         fill="#ECACC0"

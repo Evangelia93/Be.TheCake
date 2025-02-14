@@ -1,6 +1,6 @@
 import React from "react";
 import StackGrid from "react-stack-grid";
-import "../Photos/photos.css";
+import style from "../Photos/photos.module.css";
 import img1 from "../../assets/cakes/1.jpg";
 import img2 from "../../assets/cakes/2.jpg";
 import img3 from "../../assets/cakes/3.jpg";
@@ -21,7 +21,7 @@ const Photos = () => {
             gutterHeight={10} // Απόσταση μεταξύ των εικόνων (κάθετα)
         >
             {images.map((imgSrc, index) => (
-                <div className="pics" key={index}>
+                <div className={style.pics} key={index}>
                     <img src={imgSrc} alt={`Cake ${index + 1}`} />
                 </div>
             ))}

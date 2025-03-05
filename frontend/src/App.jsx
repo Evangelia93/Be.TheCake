@@ -10,18 +10,16 @@ import Gallery from "./pages/Gallery";
 import BasicCakes from "./pages/BasicCakes";
 import SignIn from "./components/SignIn";
 import ScrollToTop from "./components/ScrollToTop"; 
-import Photos from "./components/Photos";
-
+import CakeDetails from "../src/components/CakeDetails"
+import SignUp from "./components/SignUp";
 
 function Layout() {
   return (
     <div className="layout">
-      <Photos />
       <main className="content">
-        <ScrollToTop /> 
         <Outlet /> 
+        <ScrollToTop /> 
       </main>
-      <Footer />
     </div>
   );
 }
@@ -29,6 +27,7 @@ function Layout() {
 function App() {
   return (
     <Router>
+<Header />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -38,8 +37,11 @@ function App() {
           <Route path="gallery" element={<Gallery/>} />
           <Route path="basiccakes" element={<BasicCakes/>} />
           <Route path="signin" element={<SignIn/>}/> 
+          <Route path="basiccakes/:id" element={<CakeDetails />} />
+          <Route path="signup" element={<SignUp />} />
         </Route>
       </Routes>
+<Footer />
     </Router>
   );
 }

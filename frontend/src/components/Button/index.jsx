@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Button/button.css"
+import styles from "../Button/button.module.css"
 import { useNavigate } from "react-router-dom";
 
 function Button({ label, onClick, style, className, to, isPopUp, PopUpComponent, icon }) {
@@ -23,18 +23,18 @@ function Button({ label, onClick, style, className, to, isPopUp, PopUpComponent,
 
     return (
         <>
-        <div className="btn">
+        <div className={styles.btn}>
             <button className={`button ${className}`} style={style} onClick={handleClick}>
-                {icon && <span className="button-icon">{icon}</span>}   
+                {icon && <span className={styles.buttonIcon}>{icon}</span>}   
                 {label}
                 
             </button>
                 
         </div>
             {isPopUp && showPopUp && (
-                <div className="modal">
-                    <div className="modal-content">
-                        <span className="close" onClick={() => setPopUp(false)}>&times;</span>
+                <div className={styles.modal}>
+                    <div className={styles.modal-content}>
+                        <span className={styles.close} onClick={() => setPopUp(false)}>&times;</span>
                         {PopUpComponent}
                     </div>
                 </div>

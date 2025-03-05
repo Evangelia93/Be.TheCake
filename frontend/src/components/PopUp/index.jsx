@@ -1,19 +1,19 @@
 import React from "react";
-import "../PopUp/popup.css"; 
+import style from "../PopUp/popup.module.css"; 
 
 function PopUp({ show, onClose, children }) {
     if (!show) return null;
 
     const handleOverlayClick = (e) => {
-        if (e.target.classList.contains("popup-overlay")) {
+        if (e.target.classList.contains(style["popup-overlay"])) {
             onClose();
         }
     };
 
     return (
-        <div className="popup-overlay" onClick={handleOverlayClick}>
-            <div className="popup-content">
-                <span className="popup-close" onClick={onClose}>&times;</span>
+        <div className={style["popup-overlay"]} onClick={handleOverlayClick}>
+            <div className={style["popup-content"]}>
+                <span className={style["popup-close"]} onClick={onClose}>&times;</span>
                 {children} 
             </div>
         </div>

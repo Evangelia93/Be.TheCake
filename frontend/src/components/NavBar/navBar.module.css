@@ -1,0 +1,99 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    width: 100%; 
+    position: absolute;
+    top: 0px;
+    margin-top: 1px;
+    padding-top: 10px;
+   
+}
+
+.logo {
+    color: white;
+    transition: transform 0.3s ease;
+    margin-left: 50px;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+    font-family: "Atma", serif;
+    font-size: 26px;
+    text-decoration: none;
+}
+.navBar .logo:hover {
+    transform: scale(1.1); 
+}
+.links{
+    margin-right: 140px;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.navButton {
+    color: white; 
+    font-size: 21px;
+    padding: 10px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out; 
+    border: none;
+    font-family: "Atma", serif;
+}
+.navButton:hover, .navButton:active{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+.signin {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.signin:hover{
+    transform: scale(1.1);
+}
+
+.signin img{
+    height: 35px;
+    width: auto; 
+    border-radius: 50%; 
+    transition: transform 0.3s ease;
+}
+
+.waveContainer{
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+   position: relative;
+   top:0px;
+   z-index: 10;
+}
+.waveContainer img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .links ul li a {
+        padding: 10px;
+    }
+
+    .signin {
+        margin-top: 10px;
+    }
+}

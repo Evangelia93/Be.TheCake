@@ -1,4 +1,4 @@
-.photos {
+/* .photos {
     column-count: 3;
     column-gap: 15px;
 }
@@ -15,4 +15,29 @@
 
 .pics img:hover {
  
+} */
+
+.galleryItem .image{
+
+ 
 }
+.galleryItem{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container{
+    display: grid
+    ;
+        align-items: center;
+
+}
+.galleryItem .image img{
+    width: 50%;
+    height: 50%;
+    
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+

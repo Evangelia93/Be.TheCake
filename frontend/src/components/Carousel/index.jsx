@@ -1,11 +1,10 @@
 import React from "react";
-import Button from "../Button";
-import image1 from "../../assets/cakes/1.jpg"
-import image2 from "../../assets/cakes/2.jpg"
-import image3 from "../../assets/cakes/3.jpg"
-import image4 from "../../assets/cakes/4.jpg"
-import image5 from "../../assets/cakes/5.jpg"
-import image6 from "../../assets/cakes/6.jpg"
+import image1 from "../../assets/cakes/1.png"
+import image2 from "../../assets/cakes/2.png"
+import image3 from "../../assets/cakes/3.png"
+import image4 from "../../assets/cakes/4.png"
+import image5 from "../../assets/cakes/5.png"
+import image6 from "../../assets/cakes/6.png"
 import image7 from "../../assets/cakes/7.jpg"
 import image8 from "../../assets/cakes/8.jpg"
 import image9 from "../../assets/cakes/9.jpg"
@@ -72,9 +71,6 @@ function Carousel(params) {
                 </div>
             </div>
          </div>
-<div className={style.carouselBtn}>
-    <Button to="/gallery" label={"Go to gallery page"} className={style.goToGalleryBtn} />
-</div>
 </>
 )
 }

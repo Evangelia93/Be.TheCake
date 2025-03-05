@@ -42,7 +42,9 @@
 .cakeDetails .btn{
     background-color: transparent;
 }
-
+.cakeDetails .btn:hover{
+    transform: scale(1.1); 
+}
 .cakeDetails .btnImage{
     width: 32px;
 }

@@ -12,20 +12,97 @@ import img8 from "../../assets/cakes/8.jpg";
 import img9 from "../../assets/cakes/9.jpg";
 
 const Photos = () => {
-    const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+    // const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
     return (
-        <StackGrid
-            columnWidth={250} // Προσαρμόζει το πλάτος της κάθε στήλης
-            gutterWidth={10} // Απόσταση μεταξύ των εικόνων (οριζόντια)
-            gutterHeight={10} // Απόσταση μεταξύ των εικόνων (κάθετα)
-        >
-            {images.map((imgSrc, index) => (
-                <div className={style.pics} key={index}>
-                    <img src={imgSrc} alt={`Cake ${index + 1}`} />
+        // <StackGrid
+        //     columnWidth={250} // Προσαρμόζει το πλάτος της κάθε στήλης
+        //     gutterWidth={10} // Απόσταση μεταξύ των εικόνων (οριζόντια)
+        //     gutterHeight={10} // Απόσταση μεταξύ των εικόνων (κάθετα)
+        // >
+        //     {images.map((imgSrc, index) => (
+        //         <div className={style.pics} key={index}>
+        //             <img src={imgSrc} alt={`Cake ${index + 1}`} />
+        //         </div>
+        //     ))}
+        // </StackGrid>
+        <div className="container">
+
+
+            <div className={style.galleryCotainer}>
+                <div className={style.galleryItem}>
+                    <iv className={style.image}>
+                        <img src={img1} alt="Image 1"/>
+                    </iv>
                 </div>
-            ))}
-        </StackGrid>
+            </div>
+
+            <div classname={style.gallerycotainer}>
+                <div className={style.galleryItem}>
+                    <div className={style.image}>
+                        <img src={img2} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+
+            <div classname={style.gallerycotainer}>
+                <div className={style.galleryItem}>
+                    <div className={style.image}>
+                        <img src={img3} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+
+            <div classname={style.gallerycotainer}>
+                <div className={style.galleryItem}>
+                    <div className={style.image}>
+                        <img src={img4} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+
+            <div classname={style.gallerycotainer}>
+                <div className={style.galleryItem}>
+                    <div className={style.image}>
+                        <img src={img5} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+
+            <div classname={style.gallerycotainer}>
+                <div className={style.galleryItem}>
+                    <div className={style.image}>
+                        <img src={img6} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+
+            <div classname={style.gallerycotainer}>
+                <div className={style.galleryItem}>
+                    <div className={style.image}>
+                        <img src={img7} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+
+            <div classname={style.gallerycotainer}>
+                <div className={style.galleryItem}>
+                    <div className={style.image}>
+                        <img src={img8} alt="Image 1"/>
+                    </div>
+                </div>
+            </div> 
+
+            <div classname={style.gallerycotainer}>
+                <div className={style.galleryItem}>
+                    <div className={style.image}>
+                        <img src={img9} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     );
 };
 

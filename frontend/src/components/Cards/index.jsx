@@ -1,13 +1,20 @@
 import style from "./card.module.css"
-
-import addToCart from "../../assets/add-to-cart-svgrepo-com.svg"
 import { BrowserRouter as Router, Routes, Route, Outlet, Link } from "react-router-dom";
 import cakeData from "../CakeData"
+import { useEffect } from "react";
+import { gsap } from "gsap";
 
-
-function Cards({onClick}){
+function Cards(){
     
-    console.log(cakeData); 
+    useEffect(()=>{
+        gsap.to(`.${style.cardComponent}`, {
+            opacity:1,
+            y: 20,
+            duration: 0.8,
+            stagger: 0.3,
+            ease: "back.out"
+        })
+    },[])
 
     return(<>
     <div className={style.grid}>

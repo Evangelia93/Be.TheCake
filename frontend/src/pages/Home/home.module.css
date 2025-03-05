@@ -1,57 +1,66 @@
 .home .buttons{
-    position: absolute;
+    position: relative;
     justify-content: center;
     display: flex;
-    top: 93%;
-    width: 100%;
-    gap: 80px;
-    margin: 10px;
+flex-wrap: wrap;    
+width: 100%;
+    gap: 30px;
+}
+.buttons .centerBtn:hover{
+    transform: scale(1.1);
 }
 .home .buttons .centerBtn{
     text-decoration: none;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     padding: 8px 15px;
-    transition: color 0.3s ease;
     border-radius: 30px;
     align-items: center;
+    justify-content: center;
     width: 200px;
     height: 50px;
+    color: white;
     border:1px solid #BB8899;
     background-color:#ECACC0;
 }
-.home .buttons .centerBtn img {
-    width: 30px;
-    align-items: center;
-    justify-content: center;
-}
 
 .home h3{
-    position: absolute;
+    position: relative;
     justify-content: center;
     display: flex;
-    top: 65%;
-    width: 70%;
-    margin-left: 240px;
     text-align: center;
     font-size: 25px;
     color: #BB8899;    
     font-family: "Atma", serif;
-
     font-weight: 700;
 }
 
 .home h1 {
-    position: absolute;
+    position: relative;
     justify-content: center;
     display: flex;
-    top: 80%;
-    width: 70%;
-    margin-left: 240px;
     text-align: center;
     font-size: 35px;
     color: #BB8899;
     font-family: "Atma", serif;
-    /* -webkit-text-stroke: 2px #BB8899; */
     font-weight: bolder;
+}
+
+.reviewContainer{
+    margin-left: 0px;
+    margin-top: 15px;
+    padding-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 0px;
+}
+.reviewTitle{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    color: #BB8899;
+    font-family: "Atma", serif;
+    font-weight: bolder;
+    margin: 10px;
+    margin-bottom: 25px;
 }

@@ -25,7 +25,7 @@ function Button({ label, onClick, style, className, to, isPopUp, PopUpComponent,
         <>
         <div className={styles.btn}>
             <button className={`button ${className}`} style={style} onClick={handleClick}>
-                {icon && <span className={styles.button-icon}>{icon}</span>}   
+                {icon && <span className={styles.buttonIcon}>{icon}</span>}   
                 {label}
                 
             </button>

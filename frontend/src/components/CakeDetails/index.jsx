@@ -3,14 +3,24 @@ import cakeData from "../../components/CakeData";
 import Button from "../../components/Button"
 import addToCart from "../../assets/add-to-cart-svgrepo-com.svg"
 import style from "../CakeDetails/cakeDetails.module.css"
+import { useState } from "react";
+
 
 function CakeDetails() {
-  const { id } = useParams(); // ✅ Παίρνει το ID από το URL
-  const cake = cakeData.find((c) => c.id === id); // ✅ Βρίσκει τη σωστή τούρτα
+  const { id } = useParams();
+  const cake = cakeData.find((c) => c.id === id);
+  const [count, setCount] = useState(0)
 
   if (!cake) {
     return <h2>Cake not found!</h2>;
   }
+
+  const counter = () => {
+    setCount(count + 1)
+  }
+  console.log(counter)
+
+ 
 
   return (
     <div className={style.cakeDetails}>
@@ -20,11 +30,14 @@ function CakeDetails() {
         <p className={style.description}>{cake.cakeDescription}</p>
         <div className={style.priceBtn}>
           <p className={style.price}>Price: {cake.cakePrice}</p>
-          <Button icon={<img src={addToCart} alt="Add to cart" className={style.btnImage}/>} className={style.btn}/>
+          <Button onClick={counter} 
+                  icon={<img src={addToCart} alt="Add to cart" className={style.btnImage}/>} 
+                  className={style.btn}/>
         </div>
+        <p>Quanity: {count}</p>
       </div>
     </div>
   );
-}
 
+}
 export default CakeDetails;

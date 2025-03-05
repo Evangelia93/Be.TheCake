@@ -1,0 +1,122 @@
+.screen1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 30px;
+	height: 100%;
+}
+.logo{
+  margin-top: -80px;
+  width: 40%;
+}
+
+.email, .password {
+    background: hsl(0deg 0% 100%);
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: hsl(0deg 0% 30%);
+    margin-bottom: 20px;
+    width: 90%;}
+    
+
+input {
+    outline: none;
+    border: none;
+    width: 100%;
+    &::placeholder {
+        color: hsl(0, 0%, 0%);
+        font-size: 0.9em;
+    }
+}
+
+.image {
+    margin-bottom: -10px;
+    width: 30px;
+}
+
+.login {
+    padding: 1em;
+    color: hsl(0 0 100);
+    border: none;
+    border-radius: 30px;
+    font-weight: 900;
+    background-color:#ECACC0;
+    border:1px solid #BB8899;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+.login:hover{
+    transform: scale(1.1);
+}
+.footer {
+    display: flex;
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: hsl(0deg 0% 37%);
+    gap: 14em;
+    span { cursor: pointer }
+}
+.eye {
+    margin-right: -5em;
+    width: 30px;
+    margin-bottom: -10px;
+   
+}
+.imgInput{display: flex;
+}
+
+button { 
+    cursor: pointer; 
+    width: 90%;
+
+}
+
+/* 
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    width: 100%;
+    height: 55%;
+    border-radius: 20px;
+}
+.email, .password{
+    margin: 5px;
+}
+input{
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+.img{
+    width: 30px;
+    position: relative;
+    top: 7px;
+    margin-right: 5px;
+}
+.signInB}tn{
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.signInBtn button{
+    background-color:#ECACC0;
+    border:1px solid #BB8899;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+.signInBtn button:hover{
+    transform: scale(1.1); } */

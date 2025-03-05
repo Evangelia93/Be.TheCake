@@ -7,7 +7,15 @@
     place-items: center;
     overflow: hidden; 
     display: flex;
-    margin-top: 800px;
+    
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); 
+    }
 }
 
 .slideTrack {
@@ -20,14 +28,6 @@
     animation-play-state: paused;
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%); 
-    }
-}
 
 .slider .slide {
     height: 250px;
